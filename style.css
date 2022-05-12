@@ -1,0 +1,86 @@
+body{
+    text-align: center;
+    background-image: linear-gradient(135deg, rgb(166, 139, 255), rgb(255, 196, 20));
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+    /* overflow: hidden; */
+
+}
+.gameName{
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.container{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 20%;
+    padding: 50px;
+    background-color: white;
+    box-shadow: -2px 6px 18px 3px rgba(251, 241, 144, 0.75);
+}
+.players{
+    width: 100% ;
+    display: flex;
+    justify-content: space-around;
+}
+.dice{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    font-size: 70px;
+
+    border-radius: 5px;
+    background-color: rgb(166, 139, 255);
+    color: whitesmoke;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.active{
+    box-shadow: -2px 6px 18px 3px rgba(166, 139, 255);
+   /* tansform: scale(1.2); */
+}
+
+/* buttons */
+button{
+    margin: 50px auto;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+#roll-btn{
+    background-color: rgb(0, 188, 16);
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+#roll-btn:hover{
+    box-shadow: -2px 6px 18px 3px rgba(0, 255, 51, 0.75);
+}
+#roll-btn:active{
+    box-shadow: -2px 6px 18px 3px rgba(0, 255, 51, 0.75);
+    transform: scale(0.95);
+}
+
+
+#reset-btn{
+    background-color: rgb(200, 4, 4);
+    color: whitesmoke;
+    display: none;
+}
+#reset-btn:hover{
+    box-shadow: -2px 6px 18px 3px rgba(255, 13, 0, 0.75);
+}
+#reset-btn:active{
+    box-shadow: -2px 6px 18px 3px rgba(255, 0, 0, 0.75);
+    transform: scale(0.95);
+}
